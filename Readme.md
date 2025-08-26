@@ -44,6 +44,8 @@ Each patient record includes:
 - [FastAPI](https://fastapi.tiangolo.com/)
 - [Uvicorn](https://www.uvicorn.org/)
 
+- [Streamlit](https://streamlit.io/) (for the frontend)
+
 ### Installation
 1. Clone the repository:
    ```bash
@@ -58,6 +60,7 @@ Each patient record includes:
 3. Install dependencies:
    ```bash
    pip install -r requirements.txt
+   pip install streamlit
    ```
 
 ### Running the API
@@ -66,6 +69,13 @@ Start the server with:
 uvicorn main:app --reload
 ```
 The API will be available at [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+### Running the Streamlit Frontend
+Start the Streamlit app with:
+```bash
+streamlit run frontend.py
+```
+The frontend will open in your browser (usually at [http://localhost:8501](http://localhost:8501)).
 
 ### API Documentation
 Interactive docs are available at:
